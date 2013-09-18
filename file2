@@ -1,4 +1,3 @@
-line 1
 line2
 added this line in branch1
-added this line in branch1 after a merge with master
+added this line in branch1 after a merge with master. Also, deleted line 1.
