@@ -7,6 +7,7 @@ git repository - the files that are here are safely stored within the repository
 
 
 *******  DOWNLOADING FILES  *******
+# TODO: creating own repo
 git clone: creates working directory and a valid git repository
 
 git pull: downloads all files and file changes from remote repository (like the one on github)
@@ -53,15 +54,26 @@ git mergetool --tool=kdiff3
 git commit -am "some message"
 git push
 
+# To allow other people to push to your github repository: Settings - Add them as Collaborators
 
-*******  OTHER USEFUL COMMANDS  ********
-git status	 # Is everything ok?
-git log		 # What were the last commit messages and commit IDs?
+******  RETURNING TO PREVIOUS COMMITS  ******
 
 git checkout <commit_ID>  # return working directory to a previous state, for example:
 git checkout c9cda6dc4fd35bf4640f534af4a507f1092fcbce
 git checkout master		# return from that previous state back to the presence
 
 
+*******  OTHER USEFUL COMMANDS  ********
+git status	 # Is everything ok?
+git log		 # What were the last commit messages and commit IDs?
+
+
+# TODO:
 ******  BRANCHING  *******
 # not covered here, sorry
+
+******  STASHING  ******
+
+
+******  REBASE vs. PULL  ******
+
