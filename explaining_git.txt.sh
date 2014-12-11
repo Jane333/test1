@@ -58,10 +58,13 @@ git push
 
 ******  RETURNING TO PREVIOUS COMMITS  ******
 
-git checkout <commit_ID>  # return working directory to a previous state, for example:
-git checkout c9cda6dc4fd35bf4640f534af4a507f1092fcbce
+git checkout <old_commit_ID>  # return working directory to a previous state, for example:
+git checkout c9cda6dc4fd35bf4640f534af4a507f1092fcbce  # this will land you in a "detached HEAD" state, meaning: you can look around here, make changes, even commit them, but they will be lost after the next checkout unless you first create a new branch for these new commits: git checkout -b new_branch_name
 git checkout master		# return from that previous state back to the presence
 
+# or:
+git reset --hard <old_commit_ID> # return working directory and HEAD to a previous state
+git reset --hard <new_commit_ID> # return from that previous state back to the presence. Note: To do this, you need to write down the new_commit_ID BEFORE (!!!) you do git reset --hard <old_commit_ID>, before afterwards git won't show the new_commit_ID via git log anymore. You can only dig it up via: git reflog
 
 *******  OTHER USEFUL COMMANDS  ********
 git status	 # Is everything ok?
