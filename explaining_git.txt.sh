@@ -1,9 +1,9 @@
 *******  HOW GIT WORKS  *******
 working directory - staging area - git repo
 
-working directory: files you see on your harddrive
-staging area: a file, generally contained in your Git directory, that stores information about what will go into your next commit.
-git repository - the files that are here are safely stored within the repository. It is actually relatively difficult removing them by accident once they are here.
+working directory: files you see on your harddrive. Can hold "modified" files.
+staging area (= index): a file, generally contained in your Git directory, that stores information about what will go into your next commit. Holds "staged" files.
+git repository - the files that are here are safely stored within the repository. It is actually relatively difficult removing them by accident once they are here. Holds "commited" files.
 
 
 *******  DOWNLOADING FILES  *******
@@ -70,7 +70,7 @@ git log		 # What were the last commit messages and commit IDs?
 
 # TODO:
 ******  BRANCHING  *******
-# not covered here, sorry
+
 
 ******  STASHING  ******
 
