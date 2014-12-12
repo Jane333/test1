@@ -136,7 +136,7 @@ git push -f  # now you need to upload your nicely linear commits from your local
 cat .git/HEAD
 # In my case, the output is:
 ref: refs/heads/master
-# It is possible for HEAD to refer to a specific revision that is not associated with a branch name. This situation is called a detached HEAD.
+# It is possible for HEAD to refer to a specific revision that is not associated with a branch name. This situation is called a detached HEAD. Any checkout to a specific commit ID will get you there.
 
 --- ORIGIN ---
 # origin is the original remote repository, by convention it is the 'primary' centralized repository as well.
